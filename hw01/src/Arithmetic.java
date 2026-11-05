@@ -1,5 +1,8 @@
 import edu.princeton.cs.algs4.StdIn;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /** Simple Arithmetic Class.
  * @author Josh Hug
  * */
@@ -24,6 +27,14 @@ public class Arithmetic {
     }
 
     public static void main(String[] args) {
+        List<Integer> a=new ArrayList<>();
+        IO.println(a.size());
+        List<Integer> b=a;
+        b.add(1);
+
+
+
+        IO.println(a.size());
         System.out.println("Give me a number! (no decimals, please)");
         int num1 = StdIn.readInt();
         System.out.println("Give me another number! (still no decimals)");

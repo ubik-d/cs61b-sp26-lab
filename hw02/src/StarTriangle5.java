@@ -4,7 +4,17 @@ public class StarTriangle5 {
      * The first row contains 1 star, the second 2 stars, and so on. 
      */
    public static void starTriangle5() {
-      // TODO: Fill in this function
+      for(int i=0;i<5;i++){
+         for(int j=0;j<5;j++){
+            if(j+i-4<0){
+               IO.print(' ');
+            }
+            else{
+               IO.print("%c".formatted('*'));
+            }
+         }
+         IO.println();
+      }
    }
    
    public static void main(String[] args) {
